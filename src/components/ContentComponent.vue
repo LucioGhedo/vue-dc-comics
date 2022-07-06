@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('../style/colors.scss');
+@import '../style/colors.scss';
 .color {
     background-color: #1c1c1c;
     color: white;

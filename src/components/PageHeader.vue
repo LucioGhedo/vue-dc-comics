@@ -68,8 +68,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('../style/common.scss');
-@import url('../style/colors.scss');
+@import '../style/common.scss';
+@import '../style/colors.scss';
 .logo {
     padding: 10px;
 }
@@ -79,12 +79,12 @@ li {
     align-self: center;
 
     &.active {
-        border-bottom: solid #2481f4 5px;
+        border-bottom: solid $primary 5px;
     }
     
 }
 .color {
-    color: #2481f4;
+    color: $primary;
 }
 ul {
     height: 100%;

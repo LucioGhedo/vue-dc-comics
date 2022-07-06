@@ -45,7 +45,7 @@ export default {
 @import '../style/colors.scss';
 @import '../style/common.scss';
 .color {
-    background-color: #2481f4;
+    background-color: $primary;
     height: 120px;
 }
 .flex-ms {

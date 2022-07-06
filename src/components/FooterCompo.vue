@@ -9,12 +9,6 @@
                             <li v-for="link in dcComics" :key="link">
                                 <a href="#">{{link.text}}</a>
                             </li>
-                            <!-- <li>Comics</li>
-                            <li>Movies</li>
-                            <li>TV</li>
-                            <li>Games</li>
-                            <li>Videos</li>
-                            <li>News</li> -->
                         </ul>
                     </div>
                     <div class="footer-links">
@@ -173,8 +167,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('../style/common.scss');
-@import url('../style/common.scss');
+@import '../style/common.scss';
+@import '../style/common.scss';
 .back {
     background-image: url('../assets/img/footer-bg.jpg');
     color: white;
