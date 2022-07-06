@@ -1,25 +1,9 @@
 <template>
     <div class="color">
         <div class="container flex">
-            <div class="flex-ms">
-                <img src="../assets/img/buy-comics-digital-comics.png" alt="buy">
-                <p>DIGITAL COMICS</p>
-            </div>
-            <div class="flex-ms">
-                <img src="../assets/img/buy-comics-shop-locator.png" alt="buy">
-                <p>DC MERCHANDISE</p>
-            </div>
-            <div class="flex-ms">
-                <img src="../assets/img/buy-comics-merchandise.png" alt="buy">
-                <p>SUBSCRIPTIONS</p>
-            </div>
-            <div class="flex-ms">
-                <img src="../assets/img/buy-comics-subscriptions.png" alt="buy">
-                <p>COMIC SHOP LOCATOR</p>
-            </div>
-            <div class="flex-ms">
-                <img src="../assets/img/buy-dc-power-visa.svg" alt="buy">
-                <p>DC POWER VISA</p>
+            <div class="flex-ms" v-for="element in bannerContent" :key="element">
+                <img v-bind:src="element.img" :alt="element.text">
+                <p>{{element.text}}</p>
             </div>
         </div>
     </div>
@@ -27,13 +11,39 @@
 
 <script>
 export default {
-    name: 'BlueBanner'
+    name: 'BlueBanner',
+    data() {
+        return {
+            bannerContent: [
+                {
+                    img: require('../assets/img/buy-comics-digital-comics.png'),
+                    text: 'DIGITAL COMICS'
+                },
+                {
+                    img: require('../assets/img/buy-comics-shop-locator.png'),
+                    text: 'DC MERCHANDISE'
+                },
+                {
+                    img: require('../assets/img/buy-comics-merchandise.png'),
+                    text: 'SUBSCRIPTIONS'
+                },
+                {
+                    img: require('../assets/img/buy-comics-subscriptions.png'),
+                    text: 'COMIC SHOP LOCATOR'
+                }, 
+                {
+                    img: require('../assets/img/buy-dc-power-visa.svg'),
+                    text:'DC POWER VISA'
+                }
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
-@import url('../style/colors.scss');
-@import url('../style/common.scss');
+@import '../style/colors.scss';
+@import '../style/common.scss';
 .color {
     background-color: #2481f4;
     height: 120px;
