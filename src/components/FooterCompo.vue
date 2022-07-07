@@ -172,7 +172,7 @@ export default {
 .back {
     background-image: url('../assets/img/footer-bg.jpg');
     color: white;
-    height: 330px;
+    height: 340px;
     overflow: hidden;
 }
 .title {
@@ -191,8 +191,9 @@ li {
     display: flex;
     justify-content: space-between;
     .logo {
-        width: 60%;
+        width: 64%;
         overflow: hidden;
+        transform: scale(135%);
     }
 }
 </style>

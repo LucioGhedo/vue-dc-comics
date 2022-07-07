@@ -46,7 +46,7 @@ export default {
 @import '../style/common.scss';
 .color {
     background-color: $primary;
-    height: 120px;
+    height: 140px;
 }
 .flex-ms {
     display: flex;
