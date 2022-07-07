@@ -9,6 +9,8 @@ lucioghedina@gmail.com
 ```
 
 # vue-dc-comics
-```
+
+<sub>
 BOOLEAN PROJECT
-```
+~~CIAO~~
+</sub>
