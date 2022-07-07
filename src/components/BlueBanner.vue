@@ -1,9 +1,9 @@
 <template>
     <div class="color">
         <div class="container flex">
-            <div class="flex-ms" v-for="element in bannerContent" :key="element">
-                <img v-bind:src="element.img" :alt="element.text">
-                <p>{{element.text}}</p>
+            <div class="flex-ms" v-for="item, index in bannerContent" :key="index">
+                <img v-bind:src="item.img" :alt="item.text">
+                <p>{{item.text}}</p>
             </div>
         </div>
     </div>

@@ -19,11 +19,13 @@ export default {
 <style lang="scss" scoped>
 p {
     margin-top: 20px;
+    height: 0;
 }
 .card {
     width: 190px;
     margin: 15px;
     margin-top: 30px;
+    margin-bottom: 40px ;
     .img-container {
         width: 180px;
         height: 170px;

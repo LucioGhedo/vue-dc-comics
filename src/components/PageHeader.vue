@@ -6,8 +6,8 @@
             </div>
             <div class="navbar">
                 <ul class="flex">
-                    <li v-for="link in menuLink" :key="link" :class="{'active': link.active}">
-                        <span :class="{'color': link.active}">{{link.text}}</span>
+                    <li v-for="item, index in menuLink" :key="index" :class="{'active': item.active}" @click="activeSet(index)">
+                        <span :class="{'color': item.active}">{{item.text}}</span>
                     </li>
                 </ul>
             </div>
@@ -18,6 +18,18 @@
 <script>
 export default {
     name: 'PageHeader',
+    methods: {
+        activeSet(index) {
+            if (this.menuLink[index].active) {
+                console.log(':)')
+            } else {
+                for (let i = 0; i < this.menuLink.length; i++) {
+                    this.menuLink[i].active = false
+                }
+                this.menuLink[index].active = true
+            }
+        }
+    },
     data() {
         return {
             menuLink: [
